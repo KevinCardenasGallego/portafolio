@@ -12,46 +12,47 @@ interface Project {
 export default function Proyectos() {
   const projects: Project[] = [
     {
-      title: "ComHub — EV Charging & Energy Management",
-      description: "Plataforma multi-tenant para reservas, tarifas, pagos y facturación electrónica.",
-      tags: ["FastAPI", "React", "PostgreSQL", "Azure Functions", "CI/CD"],
+      title: "Arquitectura Lakehouse Híbrida",
+      description: "Implementación de arquitectura lakehouse a gran escala integrando AWS y GCP para procesamiento optimizado de datos.",
+      tags: ["PySpark", "Databricks", "Delta Lake", "AWS S3", "GCP BigQuery", "Cloud Storage"],
       highlights: [
-        "Backend con modelos transaccionales, wallets y reservas",
-        "Integraciones de pagos y e-invoicing",
-        "Despliegue por entornos con automatización"
-      ],
-      github: "https://github.com/"
+        "Pipelines de datos procesando millones de registros",
+        "Optimización significativa en costos de procesamiento",
+        "Reducción de tiempos de consulta mediante arquitectura híbrida",
+        "Integración serverless con AWS Lambda"
+      ]
     },
     {
-      title: "Framework de Data Quality para Lakehouse",
-      description: "Validaciones de calidad por capa (Bronze/Silver/Gold), con diagnóstico por columna.",
-      tags: ["Databricks", "PySpark", "Delta Lake", "Azure", "GitHub Actions"],
+      title: "Plataforma Full Stack Empresarial",
+      description: "Desarrollo de soluciones web robustas con backend Python y frontend React, aplicando patrones de diseño y arquitecturas escalables.",
+      tags: ["Python", "React", "TypeScript", "PostgreSQL", "MySQL", "Docker"],
       highlights: [
-        "Configuración declarativa en YAML",
-        "Diagnóstico automatizado y métricas observables",
-        "Integración con pipelines de producción"
-      ],
-      github: "https://github.com/"
+        "Arquitectura escalable y mantenible",
+        "Bases de datos relacionales optimizadas",
+        "Implementación de mejores prácticas de desarrollo",
+        "Sistemas de alta disponibilidad y rendimiento"
+      ]
     },
     {
-      title: "Portal de Clientes — Data Analytics",
-      description: "Dashboard interactivo para análisis de métricas de negocio en tiempo real.",
-      tags: ["React", "TypeScript", "MUI", "Python", "FastAPI"],
+      title: "Soluciones de IA y Automatización",
+      description: "Liderazgo de proyectos de transformación digital enfocados en inteligencia artificial y automatización de procesos.",
+      tags: ["IA", "Machine Learning", "Automatización", "Python", "Cloud"],
       highlights: [
-        "Visualizaciones interactivas con gráficos dinámicos",
-        "API RESTful para consultas de datos",
-        "Autenticación y autorización OAuth"
-      ],
-      github: "https://github.com/"
+        "Transformación digital y automatización de procesos",
+        "Implementación de soluciones de IA empresarial",
+        "Generación de eficiencia operativa mediante data-driven decisions",
+        "Metodologías ágiles y gestión de equipos multidisciplinarios"
+      ]
     },
     {
-      title: "Automatización de Pipelines ETL",
-      description: "Orquestación de flujos de datos con Apache Airflow y Azure Data Factory.",
-      tags: ["Airflow", "ADF", "Python", "SQL", "Azure"],
+      title: "Pipelines de Datos en la Nube",
+      description: "Desarrollo de pipelines ETL escalables utilizando servicios cloud de GCP y AWS para procesamiento serverless.",
+      tags: ["GCP Dataproc", "AWS Lambda", "BigQuery", "Python", "SQL"],
       highlights: [
-        "Procesamiento de millones de registros diarios",
-        "Monitoreo y alertas automatizadas",
-        "Optimización de costos en la nube"
+        "Procesamiento serverless y escalable",
+        "Integración de múltiples fuentes de datos",
+        "Optimización de costos cloud",
+        "Monitoreo y alertas automatizadas"
       ]
     }
   ];

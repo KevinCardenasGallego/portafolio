@@ -72,13 +72,16 @@ body{
   width: 48px;
   height: 48px;
   border-radius: 14px;
-  display: grid;
-  place-items: center;
-  background: linear-gradient(135deg, rgba(110,231,183,0.20), rgba(59,130,246,0.20));
-  border: 1px solid var(--border);
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  font-size: 18px;
+  overflow: hidden;
+  border: 2px solid var(--accent);
+  flex-shrink: 0;
+}
+
+.avatar img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .brandInfo{
@@ -210,6 +213,26 @@ body{
 /* Hero Section */
 .hero-section{
   margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-photo{
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 32px;
+  border: 4px solid var(--accent);
+  box-shadow: 0 0 30px rgba(110, 231, 183, 0.3);
+}
+
+.hero-photo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .hero-title{
@@ -372,13 +395,17 @@ body{
   width: 120px;
   height: 120px;
   border-radius: 20px;
-  display: grid;
-  place-items: center;
-  background: linear-gradient(135deg, rgba(110,231,183,0.20), rgba(59,130,246,0.20));
-  border: 1px solid var(--border);
-  font-weight: 700;
-  font-size: 48px;
+  overflow: hidden;
+  border: 3px solid var(--accent);
   margin: 0 auto 20px;
+  box-shadow: 0 0 20px rgba(110, 231, 183, 0.2);
+}
+
+.profile-avatar img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .profile-card h3{
@@ -807,6 +834,92 @@ body{
 }
 
 /* Contact Form */
+.contact-form-container{
+  background: var(--card);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  padding: 32px;
+}
+
+.direct-contact-buttons{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.btn-whatsapp, .btn-email, .btn-linkedin{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px 24px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+  border: 2px solid;
+}
+
+.btn-whatsapp{
+  background: #25D366;
+  border-color: #25D366;
+  color: white;
+}
+
+.btn-whatsapp:hover{
+  background: #1da851;
+  border-color: #1da851;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+}
+
+.btn-email{
+  background: var(--accent-blue);
+  border-color: var(--accent-blue);
+  color: white;
+}
+
+.btn-email:hover{
+  background: #2563eb;
+  border-color: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+}
+
+.btn-linkedin{
+  background: #0077b5;
+  border-color: #0077b5;
+  color: white;
+}
+
+.btn-linkedin:hover{
+  background: #005885;
+  border-color: #005885;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 119, 181, 0.3);
+}
+
+.btn-icon{
+  font-size: 20px;
+}
+
+.contact-note{
+  margin-top: 32px;
+  padding: 20px;
+  background: rgba(110,231,183,0.06);
+  border-radius: 12px;
+  border: 1px solid rgba(110,231,183,0.15);
+}
+
+.contact-note p{
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
 .contact-form{
   margin-top: 24px;
 }

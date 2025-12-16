@@ -1,51 +1,42 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 export default function Contacto() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Aquí puedes implementar el envío del formulario
-    const mailtoLink = `mailto:kevin.cardenas1@udea.edu.co?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`Nombre: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`)}`;
-    window.location.href = mailtoLink;
-  };
-
   const contactMethods = [
     {
       icon: '📧',
       title: 'Email',
-      value: 'kevin.cardenas1@udea.edu.co',
-      link: 'mailto:kevin.cardenas1@udea.edu.co'
+      value: 'kevincardenasg@gmail.com',
+      link: 'mailto:kevincardenasg@gmail.com'
     },
     {
       icon: '📍',
       title: 'Ubicación',
-      value: 'Colombia',
+      value: 'Medellín, Colombia',
       link: null
+    },
+    {
+      icon: '📱',
+      title: 'Teléfono',
+      value: '+57 3148810204',
+      link: 'tel:+573148810204'
+    },
+    {
+      icon: '💬',
+      title: 'WhatsApp',
+      value: '+57 3148810204',
+      link: 'https://wa.me/573148810204'
     },
     {
       icon: '💼',
       title: 'LinkedIn',
-      value: 'Kevin Cárdenas',
-      link: 'https://www.linkedin.com/'
+      value: 'kevin-cardenas-gallego',
+      link: 'https://www.linkedin.com/in/kevin-cardenas-gallego'
     },
     {
       icon: '💻',
       title: 'GitHub',
-      value: '@kevinc',
-      link: 'https://github.com/'
+      value: 'KevinCardenasGallego',
+      link: 'https://github.com/KevinCardenasGallego'
     }
   ];
 
@@ -53,7 +44,7 @@ export default function Contacto() {
     <div className="page-content">
       <h1 className="page-title">Contacto</h1>
       <p className="page-description">
-        ¿Tienes un proyecto en mente o quieres colaborar? No dudes en contactarme.
+        ¿Tienes un proyecto en mente o quieres colaborar? No dudes en contactarme a través de cualquiera de estos canales.
       </p>
 
       <div className="contact-layout">
@@ -87,64 +78,44 @@ export default function Contacto() {
         </div>
 
         <div className="contact-form-container">
-          <h2 className="section-subtitle">Envía un Mensaje</h2>
-          <form className="contact-form" onSubmit={handleSubmit}>
-            <div className="form-group">
-              <label htmlFor="name" className="form-label">Nombre</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                className="form-input"
-                value={formData.name}
-                onChange={handleChange}
-                required
-              />
-            </div>
+          <h2 className="section-subtitle">Contáctame Directamente</h2>
+          
+          <div className="direct-contact-buttons">
+            <a 
+              href="https://wa.me/573148810204?text=Hola%20Kevin,%20me%20gustaría%20contactarte" 
+              target="_blank" 
+              rel="noreferrer"
+              className="btn btn-whatsapp"
+            >
+              <span className="btn-icon">💬</span>
+              Enviar WhatsApp
+            </a>
+            
+            <a 
+              href="mailto:kevincardenasg@gmail.com" 
+              className="btn btn-email"
+            >
+              <span className="btn-icon">📧</span>
+              Enviar Email
+            </a>
 
-            <div className="form-group">
-              <label htmlFor="email" className="form-label">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                className="form-input"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
-            </div>
+            <a 
+              href="https://www.linkedin.com/in/kevin-cardenas-gallego" 
+              target="_blank" 
+              rel="noreferrer"
+              className="btn btn-linkedin"
+            >
+              <span className="btn-icon">💼</span>
+              Conectar en LinkedIn
+            </a>
+          </div>
 
-            <div className="form-group">
-              <label htmlFor="subject" className="form-label">Asunto</label>
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                className="form-input"
-                value={formData.subject}
-                onChange={handleChange}
-                required
-              />
-            </div>
-
-            <div className="form-group">
-              <label htmlFor="message" className="form-label">Mensaje</label>
-              <textarea
-                id="message"
-                name="message"
-                className="form-textarea"
-                rows={6}
-                value={formData.message}
-                onChange={handleChange}
-                required
-              />
-            </div>
-
-            <button type="submit" className="btn btn-primary btn-submit">
-              Enviar Mensaje
-            </button>
-          </form>
+          <div className="contact-note">
+            <p>
+              Prefiero WhatsApp para respuestas rápidas. Para consultas detalladas, 
+              el email funciona mejor. ¡Espero tu mensaje!
+            </p>
+          </div>
         </div>
       </div>
     </div>

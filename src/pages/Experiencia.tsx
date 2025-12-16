@@ -12,55 +12,65 @@ interface Experience {
 export default function Experiencia() {
   const experiences: Experience[] = [
     {
-      position: "Data Engineer",
-      company: "Tech Solutions Inc.",
-      period: "2022 - Presente",
-      description: "Desarrollo e implementación de pipelines de datos y soluciones de analytics a escala empresarial.",
+      position: "Director General & Desarrollador Full Stack",
+      company: "Ashtronic",
+      period: "2024 - Actual",
+      description: "Liderazgo estratégico y desarrollo técnico: dirijo equipos multidisciplinarios, gestiono relaciones con clientes y alianzas, mientras desarrollo soluciones full stack, ingeniería de datos, pipelines de analítica y soluciones de IA.",
       achievements: [
-        "Diseñé e implementé un framework de calidad de datos que procesa +10M registros/día",
-        "Reduje costos de procesamiento en 40% mediante optimización de queries Spark",
-        "Lideré la migración de pipelines legacy a arquitectura moderna de lakehouse"
+        "Dirijo la estrategia de la compañía y gestión de equipos multidisciplinarios",
+        "Desarrollo aplicaciones web completas con stack moderno (React, Python, TypeScript)",
+        "Construyo pipelines de datos y soluciones de ingeniería de datos escalables",
+        "Implemento soluciones de IA y automatización para optimización de procesos",
+        "Gestiono relaciones con clientes, alianzas estratégicas y portafolio de proyectos"
       ],
-      technologies: ["Databricks", "PySpark", "Azure", "SQL", "Python"]
+      technologies: ["Liderazgo", "Python", "React", "TypeScript", "PySpark", "Databricks", "IA", "Cloud"]
     },
     {
-      position: "Fullstack Developer",
-      company: "Energy Solutions Co.",
-      period: "2020 - 2022",
-      description: "Desarrollo de plataforma multi-tenant para gestión de estaciones de carga de vehículos eléctricos.",
+      position: "Científico de Datos",
+      company: "Quind SAS",
+      period: "2023 - 2024",
+      description: "Desarrollo de pipelines de datos a gran escala y arquitectura lakehouse híbrida integrando servicios cloud.",
       achievements: [
-        "Desarrollé backend completo con FastAPI incluyendo sistema de pagos y facturación",
-        "Creé interfaz React con MUI para gestión de reservas y monitoreo en tiempo real",
-        "Implementé CI/CD automatizado reduciendo tiempo de despliegue en 70%"
+        "Participé en el desarrollo de pipelines de datos utilizando PySpark, Databricks y Delta Lake",
+        "Participé en la implementación de arquitectura lakehouse híbrida con AWS y GCP",
+        "Contribuí a la optimización significativa en costos de procesamiento y tiempos de consulta",
+        "Colaboré con equipos de producto traduciendo requerimientos en soluciones analíticas"
       ],
-      technologies: ["FastAPI", "React", "PostgreSQL", "Azure Functions", "TypeScript"]
+      technologies: ["PySpark", "Databricks", "Delta Lake", "AWS", "GCP", "BigQuery", "Cloud Storage"]
     },
     {
-      position: "Software Engineer",
-      company: "Analytics Corp",
-      period: "2019 - 2020",
-      description: "Desarrollo de herramientas de análisis y visualización de datos para clientes empresariales.",
+      position: "Desarrollador Full Stack",
+      company: "Quind SAS",
+      period: "2022 - 2023",
+      description: "Desarrollo de soluciones de software full stack robustas con backend en Python y frontend en React.",
       achievements: [
-        "Construí dashboards interactivos con React y D3.js para análisis de métricas",
-        "Optimicé APIs REST mejorando tiempos de respuesta en 60%",
-        "Automaticé procesos de ETL procesando datos de múltiples fuentes"
+        "Participé en el desarrollo de aplicaciones web completas con Python y React",
+        "Participé en el diseño e implementación de bases de datos relacionales y arquitecturas escalables",
+        "Apliqué patrones de diseño y mejores prácticas para garantizar mantenibilidad",
+        "Contribuí a la implementación de sistemas con rendimiento óptimo y alta disponibilidad"
       ],
-      technologies: ["React", "Python", "REST APIs", "D3.js", "MongoDB"]
+      technologies: ["Python", "React", "TypeScript", "PostgreSQL", "MySQL", "Docker", "Git"]
     }
   ];
 
   const education = [
     {
-      degree: "Ingeniería en Matemáticas",
+      degree: "Maestría en Matemáticas",
       institution: "Universidad de Antioquia",
-      period: "2015 - 2020",
-      description: "Especialización en matemáticas aplicadas y modelado computacional"
+      period: "2024 - Actualidad",
+      description: "Ecuaciones Diferenciales Estocásticas"
     },
     {
-      degree: "Certificación en Cloud Architecture",
-      institution: "Microsoft Azure",
-      period: "2022",
-      description: "Azure Solutions Architect Expert"
+      degree: "Matemático",
+      institution: "Universidad de Antioquia",
+      period: "2018 - 2023",
+      description: "Formación rigurosa en matemáticas puras y aplicadas"
+    },
+    {
+      degree: "Profesor de Cátedra",
+      institution: "Universidad de Antioquia - Instituto de Matemáticas",
+      period: "Agosto 2024 - Actual",
+      description: "Docente universitario promoviendo razonamiento lógico y pensamiento crítico"
     }
   ];
 

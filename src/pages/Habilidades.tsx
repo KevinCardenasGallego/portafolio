@@ -8,34 +8,34 @@ interface Skill {
 export default function Habilidades() {
   const skills: Skill[] = [
     {
-      category: "Data & Analytics",
-      items: ["Python", "SQL", "Spark", "Databricks", "ADF", "Airflow", "Delta Lake", "Pandas"]
+      category: "Analítica de Datos",
+      items: ["PySpark", "Databricks", "Delta Lake", "BigQuery", "Cloud Storage", "Dataproc", "Python", "SQL"]
     },
     {
-      category: "Backend Development",
-      items: ["FastAPI", "C#", ".NET", "REST APIs", "Auth/OAuth", "PostgreSQL", "DynamoDB"]
+      category: "Cloud & Infraestructura",
+      items: ["GCP (BigQuery, Cloud Storage, Dataproc)", "AWS (S3, Lambda)", "Docker", "Serverless"]
     },
     {
-      category: "Frontend Development",
-      items: ["React", "TypeScript", "JavaScript", "MUI", "Vite", "HTML/CSS"]
+      category: "Desarrollo Full Stack",
+      items: ["Python", "React", "TypeScript", "JavaScript", "HTML/CSS"]
     },
     {
-      category: "Cloud & DevOps",
-      items: ["AWS (Lambda, S3, API Gateway)", "Azure (Functions, ADLS)", "Docker", "CI/CD", "GitHub Actions"]
+      category: "Bases de Datos",
+      items: ["PostgreSQL", "MySQL", "MongoDB", "DynamoDB"]
     },
     {
-      category: "Quality & Testing",
-      items: ["Data Quality frameworks", "Unit Testing", "Observability", "Performance Testing"]
+      category: "Liderazgo & Gestión",
+      items: ["Gestión de Equipos", "Arquitectura de Soluciones", "Metodologías Ágiles", "Toma de Decisiones Data-Driven"]
     },
     {
-      category: "Matemáticas & Análisis",
-      items: ["Estadística", "Álgebra Lineal", "Cálculo", "Optimización", "Modelado Matemático"]
+      category: "Matemáticas",
+      items: ["Ecuaciones Diferenciales Estocásticas", "Estadística", "Álgebra Lineal", "Cálculo", "Modelado Matemático"]
     }
   ];
 
   const tools = [
-    "Git", "VS Code", "Jupyter", "Postman", "Docker", "Azure Portal", 
-    "AWS Console", "Databricks", "Power BI", "Excel"
+    "Git", "GitHub", "VS Code", "Databricks", "Docker", 
+    "GCP Console", "AWS Console", "Jupyter", "Postman"
   ];
 
   return (

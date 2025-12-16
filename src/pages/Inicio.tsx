@@ -1,9 +1,13 @@
 import React from 'react';
+import kevinPhoto from '../assets/kevin.jpg';
 
 export default function Inicio() {
   return (
     <div className="page-content">
       <div className="hero-section">
+        <div className="hero-photo">
+          <img src={kevinPhoto} alt="Kevin Cárdenas" />
+        </div>
         <h1 className="hero-title">
           Hola, soy <span className="highlight">Kevin Cárdenas</span>
         </h1>
@@ -17,7 +21,7 @@ export default function Inicio() {
         </p>
         
         <div className="hero-cta">
-          <a href="mailto:kevin.cardenas1@udea.edu.co" className="btn btn-primary">
+          <a href="mailto:kevincardenasg@gmail.com" className="btn btn-primary">
             Contáctame
           </a>
           <a href="#proyectos" className="btn btn-secondary">
@@ -28,11 +32,11 @@ export default function Inicio() {
 
       <div className="stats-grid">
         <div className="stat-card">
-          <div className="stat-number">5+</div>
+          <div className="stat-number">3+</div>
           <div className="stat-label">Años de Experiencia</div>
         </div>
         <div className="stat-card">
-          <div className="stat-number">20+</div>
+          <div className="stat-number">6+</div>
           <div className="stat-label">Proyectos Completados</div>
         </div>
         <div className="stat-card">

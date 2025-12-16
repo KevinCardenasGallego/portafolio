@@ -1,4 +1,5 @@
 import React from 'react';
+import kevinPhoto from '../assets/kevin.jpg';
 
 export default function SobreMi() {
   return (
@@ -39,7 +40,7 @@ export default function SobreMi() {
 
         <div className="about-image">
           <div className="profile-card">
-            <div className="profile-avatar">KC</div>
+            <img src={kevinPhoto} alt="Kevin Cárdenas" className="profile-avatar" />
             <h3>Kevin Cárdenas</h3>
             <p className="profile-role">Data Engineer & Developer</p>
             <p className="profile-location">📍 Colombia</p>

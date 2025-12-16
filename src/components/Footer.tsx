@@ -2,15 +2,14 @@ import React from 'react';
 
 export default function Footer() {
   const contactInfo = {
-    email: "kevin.cardenas1@udea.edu.co",
+    email: "kevincardenasg@gmail.com",
     location: "Colombia",
-    phone: "+57 XXX XXX XXXX" // Actualiza con tu número real
+    phone: "+57 3148810204"
   };
 
   const socialLinks = [
-    { name: "GitHub", url: "https://github.com/", icon: "github" },
-    { name: "LinkedIn", url: "https://www.linkedin.com/", icon: "linkedin" },
-    { name: "Twitter", url: "https://twitter.com/", icon: "twitter" }
+    { name: "GitHub", url: "https://github.com/KevinCardenasGallego", icon: "github" },
+    { name: "LinkedIn", url: "https://www.linkedin.com/in/kevin-cardenas-gallego", icon: "linkedin" },
   ];
 
   return (
