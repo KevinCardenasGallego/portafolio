@@ -21,11 +21,13 @@ export default function Inicio() {
         </p>
         
         <div className="hero-cta">
-          <a href="mailto:kevincardenasg@gmail.com" className="btn btn-primary">
+          <a 
+            href="https://wa.me/573148810204?text=Hola%20Kevin,%20me%20gustaría%20contactarte" 
+            target="_blank"
+            rel="noreferrer"
+            className="btn btn-primary"
+          >
             Contáctame
-          </a>
-          <a href="#proyectos" className="btn btn-secondary">
-            Ver Proyectos
           </a>
         </div>
       </div>

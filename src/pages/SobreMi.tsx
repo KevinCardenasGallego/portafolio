@@ -33,7 +33,7 @@ export default function SobreMi() {
             <li>🔬 Machine Learning y Data Science</li>
             <li>🏗️ Arquitectura de Software</li>
             <li>📊 Visualización de Datos</li>
-            <li>🧮 Matemáticas Aplicadas</li>
+            <li>🧮 Matemática Teórica</li>
             <li>🚀 Tecnologías Cloud</li>
           </ul>
         </div>
