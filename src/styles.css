@@ -422,6 +422,30 @@ body{
   color: var(--muted);
 }
 
+/* Projects Sections */
+.projects-section{
+  margin-bottom: 56px;
+}
+
+.projects-section + .projects-section{
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.projects-section-title{
+  font-size: 26px;
+  margin: 0 0 8px;
+  letter-spacing: -0.01em;
+}
+
+.projects-section-subtitle{
+  color: var(--muted);
+  margin: 0 0 24px;
+  line-height: 1.6;
+  font-size: 15px;
+  max-width: 760px;
+}
+
 /* Projects Grid */
 .projects-grid{
   display: grid;
@@ -434,6 +458,46 @@ body{
   border-radius: var(--radius);
   border: 1px solid var(--border);
   transition: all 0.3s;
+}
+
+.project-meta{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.project-status{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(110,231,183,0.12);
+  color: var(--accent);
+  border: 1px solid rgba(110,231,183,0.30);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.project-status::before{
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 8px var(--accent);
+}
+
+.project-client{
+  background: rgba(255,255,255,0.06);
+  color: var(--muted);
+  border: 1px solid var(--border);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .project-card:hover{
@@ -499,6 +563,53 @@ body{
   gap: 16px;
   padding-top: 16px;
   border-top: 1px solid var(--border);
+}
+
+.project-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.project-footer .project-links{
+  padding-top: 0;
+  border-top: none;
+  margin-left: auto;
+}
+
+.project-footer:has(> :only-child) .project-toggle,
+.project-footer:has(> :only-child) .project-links{
+  margin-left: 0;
+}
+
+.project-toggle{
+  background: rgba(110,231,183,0.08);
+  color: var(--accent);
+  border: 1px solid rgba(110,231,183,0.25);
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.project-toggle:hover{
+  background: rgba(110,231,183,0.15);
+  border-color: var(--accent);
+}
+
+.tag-more{
+  background: rgba(255,255,255,0.06);
+  color: var(--muted);
+  border-color: var(--border);
+  font-weight: 600;
 }
 
 .project-link{

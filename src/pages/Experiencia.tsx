@@ -12,16 +12,43 @@ interface Experience {
 export default function Experiencia() {
   const experiences: Experience[] = [
     {
+      position: "Consultor & Desarrollador Freelance Full Stack",
+      company: "Independiente",
+      period: "Enero 2026 - Actual",
+      description: "Trabajo de forma independiente diseñando, desarrollando y operando plataformas a la medida para clientes privados: arquitectura, desarrollo full stack, integraciones con hardware y pasarelas de pago, despliegue en la nube y CI/CD.",
+      achievements: [
+        "Plataformas en producción para clientes privados con CI/CD en GitHub Actions y despliegue en AWS ECS / Amplify",
+        "Diseño end-to-end: backend FastAPI, frontend React/TypeScript, app móvil React Native y bases de datos MySQL",
+        "Integraciones con hardware IoT (Wallbox, Tuya) y pasarelas de pago (Wompi, Mercado Pago)",
+        "Consultoría en arquitectura, ingeniería de datos y soluciones de IA para optimización de procesos",
+        "Gestión directa de la relación con cliente: levantamiento de requerimientos, entrega y operación"
+      ],
+      technologies: ["FastAPI", "React", "TypeScript", "React Native", "MySQL", "Docker", "AWS ECS", "AWS Amplify", "GitHub Actions", "Python", "IA"]
+    },
+    {
+      position: "Profesor de Cátedra",
+      company: "Universidad de Antioquia — Instituto de Matemáticas",
+      period: "Agosto 2024 - Actual",
+      description: "En paralelo a mi trabajo como consultor, ejerzo como docente universitario en el Instituto de Matemáticas, enfocado en el desarrollo del razonamiento lógico y el pensamiento crítico de los estudiantes.",
+      achievements: [
+        "Diseño e imparto clases en cursos de matemáticas a nivel de pregrado",
+        "Promuevo el razonamiento lógico y el pensamiento crítico",
+        "Diseño material didáctico, evaluaciones y acompañamiento académico",
+        "Combino la docencia con la práctica profesional como consultor"
+      ],
+      technologies: ["Docencia", "Matemáticas", "Pensamiento Crítico", "Razonamiento Lógico"]
+    },
+    {
       position: "Director General & Desarrollador Full Stack",
       company: "Ashtronic",
-      period: "2024 - Actual",
-      description: "Liderazgo estratégico y desarrollo técnico: dirijo equipos multidisciplinarios, gestiono relaciones con clientes y alianzas, mientras desarrollo soluciones full stack, ingeniería de datos, pipelines de analítica y soluciones de IA.",
+      period: "2024 - Enero 2026",
+      description: "Liderazgo estratégico y desarrollo técnico: dirigí equipos multidisciplinarios, gestioné relaciones con clientes y alianzas, mientras desarrollaba soluciones full stack, ingeniería de datos, pipelines de analítica y soluciones de IA.",
       achievements: [
-        "Dirijo la estrategia de la compañía y gestión de equipos multidisciplinarios",
-        "Desarrollo aplicaciones web completas con stack moderno (React, Python, TypeScript)",
-        "Construyo pipelines de datos y soluciones de ingeniería de datos escalables",
-        "Implemento soluciones de IA y automatización para optimización de procesos",
-        "Gestiono relaciones con clientes, alianzas estratégicas y portafolio de proyectos"
+        "Dirigí la estrategia de la compañía y la gestión de equipos multidisciplinarios",
+        "Desarrollé aplicaciones web completas con stack moderno (React, Python, TypeScript)",
+        "Construí pipelines de datos y soluciones de ingeniería de datos escalables",
+        "Implementé soluciones de IA y automatización para optimización de procesos",
+        "Gestioné relaciones con clientes, alianzas estratégicas y portafolio de proyectos"
       ],
       technologies: ["Liderazgo", "Python", "React", "TypeScript", "PySpark", "Databricks", "IA", "Cloud"]
     },
@@ -65,12 +92,6 @@ export default function Experiencia() {
       institution: "Universidad de Antioquia",
       period: "2018 - 2023",
       description: "Formación rigurosa en matemáticas puras y aplicadas"
-    },
-    {
-      degree: "Profesor de Cátedra",
-      institution: "Universidad de Antioquia - Instituto de Matemáticas",
-      period: "Agosto 2024 - Actual",
-      description: "Docente universitario promoviendo razonamiento lógico y pensamiento crítico"
     }
   ];
 
