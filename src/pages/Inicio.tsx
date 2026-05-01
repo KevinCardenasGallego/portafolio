@@ -1,7 +1,12 @@
 import React from 'react';
 import kevinPhoto from '../assets/kevin.jpg';
+import { allProjects } from '../data/projects';
+import { getYearsOfExperience } from '../data/experience';
 
 export default function Inicio() {
+  const yearsOfExperience = getYearsOfExperience();
+  const projectsCount = allProjects.length;
+
   return (
     <div className="page-content">
       <div className="hero-section">
@@ -34,11 +39,11 @@ export default function Inicio() {
 
       <div className="stats-grid">
         <div className="stat-card">
-          <div className="stat-number">3+</div>
+          <div className="stat-number">{yearsOfExperience}+</div>
           <div className="stat-label">Años de Experiencia</div>
         </div>
         <div className="stat-card">
-          <div className="stat-number">6+</div>
+          <div className="stat-number">{projectsCount}+</div>
           <div className="stat-label">Proyectos Completados</div>
         </div>
         <div className="stat-card">
